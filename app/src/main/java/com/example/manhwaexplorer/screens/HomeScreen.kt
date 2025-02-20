@@ -88,7 +88,7 @@ fun HomeScreen(navController: NavController, viewModel: ManhwaViewModel = viewMo
 
 
     ) { innerPadding->
-        val listState = viewModel.listState
+        //val listState = viewModel.listState
 
 
         // Clear the existing entries
@@ -103,7 +103,7 @@ fun HomeScreen(navController: NavController, viewModel: ManhwaViewModel = viewMo
                 )),
             ) {
 
-            LazyColumn(state = listState,
+            LazyColumn(
                 modifier = Modifier){
                 items(manhwa){
                     ManhwaItem(
@@ -135,11 +135,6 @@ fun ManhwaItem(
                     )
                 )),
             verticalArrangement = Arrangement.Center,
-
-//Change 1
-
-
-            //.background(color= color)
         ){
             TextButton(onClick = {
                 navController.navigate(

@@ -153,7 +153,7 @@ fun FavoriteManhwaCard(manhwa: FavoriteManhwa) {
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Cyan
-                )
+            )
             Spacer(modifier = Modifier.height(16.dp))
             Image(
                 painter = painterResource(id = manhwa.imageResourceId),
@@ -161,7 +161,7 @@ fun FavoriteManhwaCard(manhwa: FavoriteManhwa) {
             )
             Spacer(modifier = Modifier.height(8.dp))
 
-                Text(stringResource(manhwa.creator))
+            Text(stringResource(manhwa.creator))
 
 
         }
